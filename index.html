@@ -42,6 +42,9 @@
             <a class="nav-link" href="#gallery">Galería</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#contact">Contacto</a>
           </li>
         </ul>
@@ -49,10 +52,14 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Sección Hero con video -->
   <section id="home" class="hero-section">
     <div class="hero-overlay">
-      <div class="container text-center text-white">
+      <video autoplay muted loop id="hero-video" class="w-100">
+        <source src="video/hero-video.mp4" type="video/mp4">
+        Tu navegador no soporta este video.
+      </video>
+      <div class="container text-center text-white position-absolute top-50 start-50 translate-middle">
         <h1 data-aos="fade-up">Innovación en Agricultura Urbana</h1>
         <p data-aos="fade-up" data-aos-delay="200">Tecnología avanzada para un futuro verde y sostenible</p>
         <a href="#solutions" class="btn btn-primary mt-4" data-aos="fade-up" data-aos-delay="400">Descubre más</a>
@@ -64,85 +71,140 @@
   <section id="solutions" class="solutions-section py-5">
     <div class="container text-center">
       <h2 class="mb-5" data-aos="fade-up">Nuestras Soluciones</h2>
-      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">GreenTech Urban Farms ofrece soluciones innovadoras para la agricultura urbana, empleando tecnologías avanzadas que optimizan la producción de alimentos en entornos urbanos. Desde invernaderos inteligentes hasta sistemas de monitoreo, nuestro enfoque está basado en la sostenibilidad y la eficiencia.</p>
+      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">GreenTech Urban Farms ofrece soluciones innovadoras para la agricultura urbana, empleando tecnologías avanzadas que optimizan la producción de alimentos en entornos urbanos.</p>
       <div class="row">
         <div class="col-md-4" data-aos="fade-right">
           <div class="solution-box">
-            <img src="img/invernadero-inteligente.svg" alt="Invernaderos Inteligentes" class="img-fluid">
+            <img src="img/invernadero-inteligente.jpg" alt="Invernaderos Inteligentes" class="img-fluid">
             <h3 class="mt-3">Invernaderos Inteligentes</h3>
-            <p>Automatización completa para monitorear y optimizar cultivos en entornos urbanos. Nuestro sistema asegura el control de variables críticas como temperatura, humedad, y luz, maximizando la producción con el mínimo de recursos.</p>
+            <p>Automatización completa para monitorear y optimizar cultivos en entornos urbanos.</p>
           </div>
         </div>
         <div class="col-md-4" data-aos="fade-up">
           <div class="solution-box">
-            <img src="img/hidroponia.svg" alt="Sistemas Hidropónicos" class="img-fluid">
+            <img src="img/hidroponico.jpg" alt="Sistemas Hidropónicos" class="img-fluid">
             <h3 class="mt-3">Sistemas Hidropónicos</h3>
-            <p>Cultivo sin suelo que maximiza los recursos hídricos y mejora la sostenibilidad. Con nuestros sistemas hidropónicos, los agricultores urbanos pueden cultivar en espacios reducidos sin comprometer la calidad ni la cantidad de la producción.</p>
+            <p>Cultivo sin suelo que maximiza los recursos hídricos y mejora la sostenibilidad.</p>
           </div>
         </div>
         <div class="col-md-4" data-aos="fade-left">
           <div class="solution-box">
-            <img src="img/monitoreo.svg" alt="Monitoreo Inteligente" class="img-fluid">
+            <img src="img/monitoreo.jpg" alt="Monitoreo Inteligente" class="img-fluid">
             <h3 class="mt-3">Monitoreo Inteligente</h3>
-            <p>Sensores avanzados y drones que permiten el control preciso en tiempo real de cada aspecto del cultivo. Nuestro monitoreo inteligente garantiza la detección temprana de problemas y optimiza el uso de agua y nutrientes.</p>
+            <p>Sensores avanzados y drones que permiten el control preciso en tiempo real de cada aspecto del cultivo.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Proyectos con más descripción -->
+  <!-- Sección de Proyectos con Testimonios -->
   <section id="projects" class="projects-section py-5 bg-light">
     <div class="container text-center">
       <h2 class="mb-5" data-aos="fade-up">Proyectos Destacados</h2>
-      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">En GreenTech Urban Farms, estamos comprometidos con llevar la agricultura sostenible a todas las ciudades. Aquí te mostramos algunos de nuestros proyectos más emblemáticos:</p>
       <div class="row">
         <div class="col-md-6" data-aos="fade-right">
           <div class="project-box">
-            <img src="img/barcelona-project.jpg" alt="Hivernacles Verds BCN" class="img-fluid">
+            <img src="img/proyecto-barcelona.jpg" alt="Hivernacles Verds BCN" class="img-fluid">
             <h3 class="mt-3">Hivernacles Verds BCN</h3>
-            <p>Un innovador proyecto de cultivo hidropónico en las azoteas de Barcelona, en colaboración con el Ayuntamiento. Este proyecto integra sistemas de automatización y monitoreo que permiten un control exhaustivo del rendimiento de los cultivos.</p>
+            <p>Un innovador proyecto de cultivo hidropónico en las azoteas de Barcelona.</p>
+            <blockquote class="blockquote text-start mt-3">
+              <p class="mb-0">"Gracias a GreenTech Urban Farms, hemos logrado implementar un sistema sostenible y eficiente para la producción de alimentos locales. Un gran éxito para nuestra ciudad."</p>
+              <footer class="blockquote-footer">Ayuntamiento de Barcelona</footer>
+            </blockquote>
           </div>
         </div>
         <div class="col-md-6" data-aos="fade-left">
           <div class="project-box">
-            <img src="img/murcia-project.jpg" alt="Murcia GreenLabs" class="img-fluid">
+            <img src="img/proyecto-murcia.jpg" alt="Murcia GreenLabs" class="img-fluid">
             <h3 class="mt-3">Murcia GreenLabs</h3>
-            <p>Invernadero inteligente con tecnología avanzada en Murcia. Este proyecto, pionero en su tipo, utiliza drones y robótica para la gestión de cultivos, asegurando una producción sostenible y de alta calidad con un mínimo impacto ambiental.</p>
+            <p>Invernadero inteligente con tecnología avanzada en Murcia.</p>
+            <blockquote class="blockquote text-start mt-3">
+              <p class="mb-0">"El proyecto de GreenTech ha revolucionado nuestra manera de gestionar los cultivos, permitiendo una producción constante y sostenible."</p>
+              <footer class="blockquote-footer">Gobierno de Murcia</footer>
+            </blockquote>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Sostenibilidad con más detalles -->
+  <!-- Sección de Sostenibilidad con lista de valores -->
   <section id="sustainability" class="sustainability-section py-5">
     <div class="container text-center">
       <h2 class="mb-5" data-aos="fade-up">Nuestro Compromiso</h2>
-      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">En GreenTech Urban Farms, estamos comprometidos con el desarrollo de tecnologías sostenibles que aseguren la producción de alimentos de alta calidad en entornos urbanos. Creemos que el futuro de la alimentación está en nuestras ciudades, y estamos dedicados a reducir el impacto ambiental de la agricultura tradicional.</p>
+      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">Creemos que el futuro de la alimentación está en nuestras ciudades, y estamos dedicados a reducir el impacto ambiental de la agricultura.</p>
       <ul class="list-unstyled" data-aos="fade-up" data-aos-delay="300">
         <li class="mb-3">● Uso de energías renovables en todos nuestros proyectos.</li>
         <li class="mb-3">● Optimización del uso del agua mediante sistemas hidropónicos.</li>
         <li class="mb-3">● Minimización del desperdicio y fomento del reciclaje de nutrientes.</li>
-        <li>● Creación de soluciones escalables que pueden ser implementadas en cualquier ciudad del mundo.</li>
+        <li>● Creación de soluciones escalables para implementar en cualquier ciudad del mundo.</li>
       </ul>
     </div>
   </section>
 
-  <!-- Sección Galería -->
+  <!-- Sección Galería con Carrusel -->
   <section id="gallery" class="gallery-section py-5 bg-light">
     <div class="container text-center">
       <h2 class="mb-5" data-aos="fade-up">Galería</h2>
-      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">Echa un vistazo a nuestras instalaciones y proyectos en diferentes ciudades. Desde invernaderos de última generación hasta sistemas hidropónicos avanzados, GreenTech Urban Farms está a la vanguardia de la agricultura urbana.</p>
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/galeria-1.jpg" class="d-block w-100" alt="Invernadero en azotea">
+          </div>
+          <div class="carousel-item">
+            <img src="img/galeria-2.jpg" class="d-block w-100" alt="Sistema hidropónico">
+          </div>
+          <div class="carousel-item">
+            <img src="img/galeria-3.jpg" class="d-block w-100" alt="Monitoreo de cultivos">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Blog -->
+  <section id="blog" class="blog-section py-5">
+    <div class="container text-center">
+      <h2 class="mb-5" data-aos="fade-up">Últimas Noticias</h2>
       <div class="row">
         <div class="col-md-4" data-aos="fade-up">
-          <img src="img/gallery-1.jpg" alt="Invernadero Urbano" class="img-fluid mb-4">
+          <div class="card">
+            <img src="img/blog-1.jpg" class="card-img-top" alt="Noticia 1">
+            <div class="card-body">
+              <h5 class="card-title">Tecnología Hidropónica: El Futuro de la Agricultura</h5>
+              <p class="card-text">Explora cómo la tecnología hidropónica está revolucionando la agricultura urbana en las principales ciudades del mundo.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <img src="img/gallery-2.jpg" alt="Sistema Hidropónico" class="img-fluid mb-4">
+          <div class="card">
+            <img src="img/blog-2.jpg" class="card-img-top" alt="Noticia 2">
+            <div class="card-body">
+              <h5 class="card-title">Invernaderos Automatizados en Ciudades</h5>
+              <p class="card-text">La automatización está permitiendo a los agricultores urbanos maximizar su producción con un mínimo de intervención humana.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-          <img src="img/gallery-3.jpg" alt="Monitoreo con Drones" class="img-fluid mb-4">
+          <div class="card">
+            <img src="img/blog-3.jpg" class="card-img-top" alt="Noticia 3">
+            <div class="card-body">
+              <h5 class="card-title">Cómo la Agricultura Urbana Ayuda al Medio Ambiente</h5>
+              <p class="card-text">Descubre los beneficios de la agricultura urbana para la sostenibilidad y cómo impacta positivamente en el medio ambiente.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

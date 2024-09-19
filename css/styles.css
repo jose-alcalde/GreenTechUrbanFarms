@@ -1,8 +1,7 @@
-/* Estilos generales */
+/* General */
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
-  background-color: #f4f4f4;
 }
 
 .navbar {
@@ -11,12 +10,6 @@ body {
 
 .hero-section {
   height: 100vh;
-  background-image: url('img/hero-background.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 
@@ -49,11 +42,11 @@ body {
   padding: 0.75rem 2rem;
 }
 
-.solutions-section, .projects-section, .sustainability-section, .gallery-section, .contact-section {
+.solutions-section, .projects-section, .sustainability-section, .gallery-section, .blog-section, .contact-section {
   padding: 5rem 0;
 }
 
-.project-box img, .solution-box img, .gallery-section img {
+.project-box img, .solution-box img, .gallery-section img, .card img {
   border-radius: 8px;
   transition: transform 0.3s;
 }
@@ -62,7 +55,11 @@ body {
   transform: scale(1.05);
 }
 
-.gallery-section img {
-  width: 100%;
-  height: auto;
+.blog-section .card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-section .card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease;
 }
