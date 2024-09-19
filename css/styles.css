@@ -1,4 +1,4 @@
-/* Estilo base */
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
@@ -15,8 +16,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #2d6a4f;
-  color: #fff;
+  background-color: #264653;
+  color: white;
 }
 
 .logo img {
@@ -33,20 +34,20 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #95d5b2;
+  color: #e9c46a;
 }
 
-/* Hero section */
+/* Sección Hero */
 .hero {
   height: 80vh;
-  background-image: url('img/invernadero-fondo.jpg');
+  background-image: url('img/invernadero-hero.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -55,42 +56,41 @@ nav ul li a:hover {
 }
 
 .hero-text h2 {
-  font-size: 56px;
-  color: #fff;
+  font-size: 48px;
+  color: white;
 }
 
 .hero-text p {
-  font-size: 24px;
-  color: #fff;
+  font-size: 20px;
+  color: white;
 }
 
 .hero-text .btn {
   margin-top: 20px;
   padding: 12px 30px;
-  background-color: #95d5b2;
-  color: #2d6a4f;
+  background-color: #2a9d8f;
+  color: white;
   border-radius: 50px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .hero-text .btn:hover {
-  background-color: #52b788;
+  background-color: #e76f51;
 }
 
-/* Sección de soluciones */
+/* Sección Soluciones */
 .solutions-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
 .solution-box {
   width: 30%;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -99,29 +99,73 @@ nav ul li a:hover {
   transform: translateY(-10px);
 }
 
-/* Sección de contacto */
-form {
-  max-width: 500px;
-  margin: 0 auto;
+.solution-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Sección de Proyectos */
+.projects-container {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+}
+
+.project-box {
+  width: 45%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+}
+
+/* Sección Contacto */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form .form-group {
+  margin-bottom: 20px;
 }
 
 form input, form textarea {
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 form button {
-  padding: 10px;
-  background-color: #2d6a4f;
+  padding: 10px 20px;
+  background-color: #264653;
   color: white;
+  border: none;
   cursor: pointer;
-  border-radius: 5px;
 }
 
 form button:hover {
-  background-color: #95d5b2;
+  background-color: #e76f51;
+}
+
+/* Footer */
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
