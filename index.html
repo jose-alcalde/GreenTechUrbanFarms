@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GreenTech Urban Farms - Agricultura urbana sostenible y automatización tecnológica en invernaderos.">
+  <meta name="keywords" content="agricultura urbana, invernaderos inteligentes, hidroponía, monitoreo de cultivos, sostenibilidad">
   <title>GreenTech Urban Farms</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header con Navegación -->
   <header>
     <div class="logo">
       <img src="img/logo.png" alt="GreenTech Urban Farms Logo">
@@ -18,75 +19,86 @@
       <ul>
         <li><a href="#home">Inicio</a></li>
         <li><a href="#solutions">Soluciones</a></li>
-        <li><a href="#about">Sobre Nosotros</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#sustainability">Sostenibilidad</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Sección Hero -->
   <section id="home" class="hero">
     <div class="hero-text">
-      <h2>Revolucionamos la Agricultura Urbana</h2>
-      <p>Monitoreo inteligente y sostenible de cultivos hidropónicos</p>
-      <a href="#solutions" class="btn">Descubre Nuestras Soluciones</a>
+      <h2>Innovación en Agricultura Urbana</h2>
+      <p>Monitoreo inteligente y tecnologías sostenibles para cultivos urbanos.</p>
+      <a href="#solutions" class="btn">Descubre más</a>
     </div>
   </section>
 
-  <!-- Sección de Soluciones -->
   <section id="solutions" class="section solutions">
     <h2>Nuestras Soluciones</h2>
     <div class="solutions-container">
       <div class="solution-box">
-        <img src="img/sensor.png" alt="Sensor de Monitoreo">
+        <img src="img/invernadero.png" alt="Invernaderos Inteligentes">
+        <h3>Invernaderos Inteligentes</h3>
+        <p>Diseñamos invernaderos urbanos con tecnología de vanguardia para el monitoreo y control de cultivos.</p>
+      </div>
+      <div class="solution-box">
+        <img src="img/hidroponico.png" alt="Sistemas Hidropónicos">
+        <h3>Sistemas Hidropónicos</h3>
+        <p>Cultivamos vegetales en ambientes controlados sin suelo, optimizando recursos.</p>
+      </div>
+      <div class="solution-box">
+        <img src="img/monitoreo.png" alt="Monitoreo Inteligente">
         <h3>Monitoreo Inteligente</h3>
-        <p>Supervisa el crecimiento de tus cultivos en tiempo real con sensores avanzados.</p>
-      </div>
-      <div class="solution-box">
-        <img src="img/automation.png" alt="Automatización">
-        <h3>Automatización Eficiente</h3>
-        <p>Optimiza el rendimiento de tu cultivo con sistemas automatizados de control.</p>
-      </div>
-      <div class="solution-box">
-        <img src="img/sustainable.png" alt="Sostenibilidad">
-        <h3>Agricultura Sostenible</h3>
-        <p>Promovemos prácticas agrícolas respetuosas con el medio ambiente.</p>
+        <p>Implementamos drones y sensores para la gestión automatizada de cultivos.</p>
       </div>
     </div>
   </section>
 
-  <!-- Sección Sobre Nosotros -->
-  <section id="about" class="section about">
-    <h2>Sobre Nosotros</h2>
-    <p>En <strong>GreenTech Urban Farms</strong>, nos dedicamos a fusionar la tecnología con la agricultura urbana para crear soluciones innovadoras y sostenibles que optimicen el cultivo hidropónico. Nuestro equipo de expertos en tecnología y sostenibilidad está comprometido con ofrecerte herramientas eficientes para maximizar el rendimiento de tus cultivos.</p>
+  <section id="projects" class="section projects">
+    <h2>Proyectos Destacados</h2>
+    <div class="projects-container">
+      <div class="project-box">
+        <img src="img/bcn-project.png" alt="Hivernacles Verds BCN">
+        <h3>Hivernacles Verds BCN</h3>
+        <p>Un innovador cultivo hidropónico en azoteas de Barcelona, en colaboración con el Ayuntamiento.</p>
+      </div>
+      <div class="project-box">
+        <img src="img/murcia-lab.png" alt="Murcia GreenLabs">
+        <h3>Murcia GreenLabs</h3>
+        <p>Invernadero inteligente con robótica avanzada y drones para monitoreo en Murcia.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Sección de Contacto -->
+  <section id="sustainability" class="section sustainability">
+    <h2>Nuestros Valores</h2>
+    <p>En GreenTech Urban Farms, impulsamos la <strong>innovación</strong>, la <strong>sostenibilidad</strong> y la <strong>calidad</strong>. Nos comprometemos con prácticas agrícolas responsables que preserven el medio ambiente y contribuyan a la seguridad alimentaria urbana.</p>
+  </section>
+
   <section id="contact" class="section contact">
     <h2>Contacto</h2>
-    <form>
+    <form action="https://formspree.io/f/myform" method="POST">
       <div class="form-group">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" placeholder="Tu nombre">
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
       </div>
       <div class="form-group">
         <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="Tu email">
+        <input type="email" id="email" name="email" placeholder="Tu email" required>
       </div>
       <div class="form-group">
         <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" placeholder="Escribe tu mensaje"></textarea>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
       </div>
       <button type="submit">Enviar</button>
     </form>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2024 GreenTech Urban Farms. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Script -->
   <script src="js/script.js"></script>
 </body>
 </html>
