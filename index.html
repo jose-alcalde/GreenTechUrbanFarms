@@ -6,20 +6,23 @@
   <meta name="description" content="GreenTech Urban Farms - Agricultura urbana sostenible y tecnología avanzada para un futuro más verde.">
   <meta name="keywords" content="agricultura urbana, sostenibilidad, invernaderos inteligentes, tecnología agrícola, hidroponía, monitoreo de cultivos">
   <meta name="author" content="GreenTech Urban Farms">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>GreenTech Urban Farms - Futuro Verde</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
   <!-- Navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
     <div class="container">
-      <a class="navbar-brand" href="#home">
-        GreenTech Urban Farms
-      </a>
+      <a class="navbar-brand" href="#home">GreenTech Urban Farms</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,7 +57,7 @@
   <!-- Hero Section con video -->
   <section id="home" class="hero-section">
     <div class="hero-overlay">
-      <video autoplay muted loop id="hero-video" class="w-100">
+      <video autoplay muted loop id="hero-video" class="w-100" playsinline>
         <source src="video/hero-video.mp4" type="video/mp4">
         Tu navegador no soporta este video.
       </video>
@@ -66,7 +69,7 @@
     </div>
   </section>
 
-  <!-- Sección de Soluciones -->
+  <!-- Sección de Soluciones con Lazy Loading -->
   <section id="solutions" class="solutions-section py-5">
     <div class="container text-center">
       <h2 class="mb-5" data-aos="fade-up">Nuestras Soluciones</h2>
@@ -74,21 +77,21 @@
       <div class="row">
         <div class="col-md-4" data-aos="fade-right">
           <div class="solution-box">
-            <img src="img/invernadero-inteligente.jpg" alt="Invernaderos Inteligentes" class="img-fluid">
+            <img src="img/invernadero-inteligente.jpg" alt="Invernaderos Inteligentes" class="img-fluid" loading="lazy">
             <h3 class="mt-3">Invernaderos Inteligentes</h3>
             <p>Automatización completa para monitorear y optimizar cultivos en entornos urbanos.</p>
           </div>
         </div>
         <div class="col-md-4" data-aos="fade-up">
           <div class="solution-box">
-            <img src="img/hidroponico.jpg" alt="Sistemas Hidropónicos" class="img-fluid">
+            <img src="img/hidroponico.jpg" alt="Sistemas Hidropónicos" class="img-fluid" loading="lazy">
             <h3 class="mt-3">Sistemas Hidropónicos</h3>
             <p>Cultivo sin suelo que maximiza los recursos hídricos y mejora la sostenibilidad.</p>
           </div>
         </div>
         <div class="col-md-4" data-aos="fade-left">
           <div class="solution-box">
-            <img src="img/monitoreo.jpg" alt="Monitoreo Inteligente" class="img-fluid">
+            <img src="img/monitoreo.jpg" alt="Monitoreo Inteligente" class="img-fluid" loading="lazy">
             <h3 class="mt-3">Monitoreo Inteligente</h3>
             <p>Sensores avanzados y drones que permiten el control preciso en tiempo real de cada aspecto del cultivo.</p>
           </div>
@@ -97,7 +100,7 @@
     </div>
   </section>
 
-  <!-- Sección de Proyectos con Testimonios -->
+  <!-- Sección de Proyectos -->
   <section id="projects" class="projects-section py-5 bg-light">
     <div class="container text-center">
       <h2 class="mb-5" data-aos="fade-up">Proyectos Destacados</h2>
@@ -107,10 +110,6 @@
             <img src="img/proyecto-barcelona.jpg" alt="Hivernacles Verds BCN" class="img-fluid">
             <h3 class="mt-3">Hivernacles Verds BCN</h3>
             <p>Un innovador proyecto de cultivo hidropónico en las azoteas de Barcelona.</p>
-            <blockquote class="blockquote text-start mt-3">
-              <p class="mb-0">"Gracias a GreenTech Urban Farms, hemos logrado implementar un sistema sostenible y eficiente para la producción de alimentos locales."</p>
-              <footer class="blockquote-footer">Ayuntamiento de Barcelona</footer>
-            </blockquote>
           </div>
         </div>
         <div class="col-md-6" data-aos="fade-left">
@@ -118,13 +117,17 @@
             <img src="img/proyecto-murcia.jpg" alt="Murcia GreenLabs" class="img-fluid">
             <h3 class="mt-3">Murcia GreenLabs</h3>
             <p>Invernadero inteligente con tecnología avanzada en Murcia.</p>
-            <blockquote class="blockquote text-start mt-3">
-              <p class="mb-0">"El proyecto de GreenTech ha revolucionado nuestra manera de gestionar los cultivos, permitiendo una producción constante y sostenible."</p>
-              <footer class="blockquote-footer">Gobierno de Murcia</footer>
-            </blockquote>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Mapa Interactivo -->
+  <section id="mapa" class="py-5">
+    <div class="container text-center">
+      <h2 data-aos="fade-up">Ubicaciones de Nuestros Proyectos</h2>
+      <div id="map" style="height: 400px;" data-aos="fade-up" data-aos-delay="200"></div>
     </div>
   </section>
 
@@ -133,12 +136,6 @@
     <div class="container text-center">
       <h2 class="mb-5" data-aos="fade-up">Nuestro Compromiso</h2>
       <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">Creemos que el futuro de la alimentación está en nuestras ciudades, y estamos dedicados a reducir el impacto ambiental de la agricultura.</p>
-      <ul class="list-unstyled" data-aos="fade-up" data-aos-delay="300">
-        <li class="mb-3">● Uso de energías renovables en todos nuestros proyectos.</li>
-        <li class="mb-3">● Optimización del uso del agua mediante sistemas hidropónicos.</li>
-        <li class="mb-3">● Minimización del desperdicio y fomento del reciclaje de nutrientes.</li>
-        <li>● Creación de soluciones escalables para implementar en cualquier ciudad del mundo.</li>
-      </ul>
     </div>
   </section>
 
@@ -149,102 +146,43 @@
       <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/galeria-1.jpg" class="d-block w-100" alt="Invernadero en azotea">
+            <img src="img/galeria-1.jpg" class="d-block w-100" alt="Invernadero en azotea" loading="lazy">
           </div>
           <div class="carousel-item">
-            <img src="img/galeria-2.jpg" class="d-block w-100" alt="Sistema hidropónico">
+            <img src="img/galeria-2.jpg" class="d-block w-100" alt="Sistema hidropónico" loading="lazy">
           </div>
           <div class="carousel-item">
-            <img src="img/galeria-3.jpg" class="d-block w-100" alt="Monitoreo de cultivos">
+            <img src="img/galeria-3.jpg" class="d-block w-100" alt="Monitoreo de cultivos" loading="lazy">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visualmente-oculto">Anterior</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visualmente-oculto">Siguiente</span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
     </div>
   </section>
-
-  <!-- Sección Blog -->
-  <section id="blog" class="blog-section py-5">
-    <div class="container text-center">
-      <h2 class="mb-5" data-aos="fade-up">Últimas Noticias</h2>
-      <div class="row">
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card">
-            <img src="img/blog-1.jpg" class="card-img-top" alt="Noticia 1">
-            <div class="card-body">
-              <h5 class="card-title">Tecnología Hidropónica: El Futuro de la Agricultura</h5>
-              <p class="card-text">Explora cómo la tecnología hidropónica está revolucionando la agricultura urbana en las principales ciudades del mundo.</p>
-              <a href="#" class="btn btn-primary">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card">
-            <img src="img/blog-2.jpg" class="card-img-top" alt="Noticia 2">
-            <div class="card-body">
-              <h5 class="card-title">Invernaderos Automatizados en Ciudades</h5>
-              <p class="card-text">La automatización está permitiendo a los agricultores urbanos maximizar su producción con un mínimo de intervención humana.</p>
-              <a href="#" class="btn btn-primary">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="card">
-            <img src="img/blog-3.jpg" class="card-img-top" alt="Noticia 3">
-            <div class="card-body">
-              <h5 class="card-title">Cómo la Agricultura Urbana Ayuda al Medio Ambiente</h5>
-              <p class="card-text">Descubre los beneficios de la agricultura urbana para la sostenibilidad y cómo impacta positivamente en el medio ambiente.</p>
-              <a href="#" class="btn btn-primary">Leer más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección de Contacto -->
-  <section id="contact" class="contact-section py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5" data-aos="fade-up">Contáctanos</h2>
-      <form action="https://formspree.io/f/myform" method="POST" data-aos="fade-up" data-aos-delay="200">
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="name" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="email" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo" required>
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tu mensaje" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer py-3 bg-dark text-white">
-    <div class="container text-center">
-      <p>© 2024 GreenTech Urban Farms. Todos los derechos reservados.</p>
-    </div>
-  </footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
   <script>
     AOS.init();
+
+    // Mapa interactivo con Leaflet.js
+    var map = L.map('map').setView([40.416775, -3.703790], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Añadir marcadores de proyectos
+    L.marker([41.3851, 2.1734]).addTo(map).bindPopup('Hivernacles Verds BCN');
+    L.marker([37.9922, -1.1307]).addTo(map).bindPopup('Murcia GreenLabs');
   </script>
 </body>
 </html>
