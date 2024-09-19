@@ -1,3 +1,4 @@
+/* General */
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
@@ -8,14 +9,14 @@ body {
   background-image: url('img/hero-background.jpg');
   background-size: cover;
   background-position: center;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0;
@@ -27,7 +28,7 @@ body {
 }
 
 .hero-overlay h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: white;
   margin-bottom: 1rem;
 }
@@ -39,7 +40,7 @@ body {
 }
 
 .hero-overlay .btn {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding: 0.75rem 2rem;
 }
 
