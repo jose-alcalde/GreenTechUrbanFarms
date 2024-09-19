@@ -1,7 +1,12 @@
-/* General */
+/* Estilos generales */
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #2d6a4f;
 }
 
 .hero-section {
@@ -44,15 +49,20 @@ body {
   padding: 0.75rem 2rem;
 }
 
-.solutions-section, .projects-section, .sustainability-section, .contact-section {
+.solutions-section, .projects-section, .sustainability-section, .gallery-section, .contact-section {
   padding: 5rem 0;
 }
 
-.project-box img, .solution-box img {
+.project-box img, .solution-box img, .gallery-section img {
   border-radius: 8px;
   transition: transform 0.3s;
 }
 
-.project-box img:hover, .solution-box img:hover {
+.project-box img:hover, .solution-box img:hover, .gallery-section img:hover {
   transform: scale(1.05);
+}
+
+.gallery-section img {
+  width: 100%;
+  height: auto;
 }
