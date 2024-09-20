@@ -51,12 +51,16 @@ body {
   border: none;
 }
 
-.about-section, .solutions-section, .team-section, .projects-section, .impact-section {
+.about-section, .solutions-section, .team-section, .projects-section, .impact-section, .sustainability-section {
   padding: 5rem 0;
 }
 
-.solutions-section, .team-section, .impact-section {
+.about-section, .solutions-section, .sustainability-section {
   background-color: #eaf4e1;
+}
+
+.sustainability-section {
+  background-color: #d3f5ce;
 }
 
 .solution-box img {
