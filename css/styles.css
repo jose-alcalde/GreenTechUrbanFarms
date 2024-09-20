@@ -2,10 +2,17 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
+  line-height: 1.6;
+  background-color: #f8f9fa;
 }
 
 .navbar {
-  background-color: #2d6a4f;
+  background-color: #264653;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: #e9c46a;
 }
 
 .hero-section {
@@ -42,24 +49,28 @@ body {
   padding: 0.75rem 2rem;
 }
 
-.solutions-section, .projects-section, .sustainability-section, .gallery-section, .blog-section, .contact-section {
+.about-section, .solutions-section, .team-section, .projects-section {
   padding: 5rem 0;
 }
 
-.project-box img, .solution-box img, .gallery-section img, .card img {
-  border-radius: 8px;
-  transition: transform 0.3s;
+.solutions-section, .team-section, .stats-section {
+  background-color: #f9f9f9;
 }
 
-.project-box img:hover, .solution-box img:hover, .gallery-section img:hover {
+.solution-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.solution-box img:hover {
   transform: scale(1.05);
 }
 
-.blog-section .card {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.blog-section .card:hover {
-  transform: translateY(-10px);
-  transition: 0.3s ease;
+footer {
+  background-color: #264653;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
