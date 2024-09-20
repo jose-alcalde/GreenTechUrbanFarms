@@ -21,6 +21,19 @@
   <meta name="og:title" content="GreenTech Urban Farms">
   <meta name="og:description" content="Innovación en agricultura urbana sostenible.">
   <meta name="og:image" content="img/og-image.jpg">
+
+  <!-- Script del Chatbot -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function(){
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/your-tawk-id/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
 </head>
 <body>
 
@@ -42,6 +55,7 @@
           <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
           <li class="nav-item"><a class="nav-link" href="#impact">Impacto</a></li>
           <li class="nav-item"><a class="nav-link" href="#sustainability">Sostenibilidad</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
       </div>
@@ -63,19 +77,19 @@
     </div>
   </section>
 
-  <!-- Sección Acerca de Nosotros Extendida -->
+  <!-- Sección Acerca de -->
   <section id="about" class="about-section py-5" style="background-color: #e0f7ef;">
     <div class="container">
       <h2 class="text-center mb-5" data-aos="fade-up">Acerca de GreenTech Urban Farms</h2>
-      <p class="lead text-center mb-4" data-aos="fade-up" data-aos-delay="200">Desde 2015, GreenTech Urban Farms lidera la transformación de la agricultura urbana en todo el mundo, proporcionando soluciones tecnológicas que permiten a las ciudades producir alimentos de manera sostenible.</p>
+      <p class="lead text-center mb-4" data-aos="fade-up" data-aos-delay="200">Desde 2015, GreenTech Urban Farms ha liderado la transformación de la agricultura urbana en todo el mundo. Nos especializamos en soluciones sostenibles y tecnológicas que permiten a las ciudades producir alimentos frescos y de calidad.</p>
       <div class="row">
         <div class="col-md-6" data-aos="fade-right">
           <h3>Nuestra Historia</h3>
-          <p>Fundada en Barcelona, GreenTech comenzó con un pequeño proyecto piloto de invernaderos automatizados. Hoy, nuestros invernaderos y sistemas hidropónicos están presentes en más de 50 ciudades, ayudando a las comunidades a obtener alimentos frescos y a reducir la huella de carbono.</p>
+          <p>Fundada en Barcelona, GreenTech ha crecido hasta convertirse en un líder en soluciones agrícolas urbanas. Nuestro equipo multidisciplinario trabaja en más de 50 ciudades, colaborando con gobiernos y empresas locales para crear entornos sostenibles de producción alimentaria.</p>
         </div>
         <div class="col-md-6" data-aos="fade-left">
-          <h3>Nuestra Filosofía</h3>
-          <p>Creemos que la sostenibilidad y la tecnología pueden trabajar juntas para mejorar el mundo. Nos especializamos en soluciones agrícolas automatizadas que minimizan el uso de recursos naturales como el agua, optimizan el espacio urbano y garantizan cultivos de alta calidad.</p>
+          <h3>Nuestra Visión</h3>
+          <p>Imaginamos un mundo en el que las ciudades sean autosuficientes y sostenibles. A través de la tecnología y la innovación, estamos reduciendo la dependencia de los sistemas tradicionales de agricultura y mejorando la seguridad alimentaria a nivel global.</p>
         </div>
       </div>
     </div>
@@ -85,100 +99,137 @@
   <section id="services" class="services-section py-5 bg-light">
     <div class="container text-center">
       <h2 class="mb-5" data-aos="fade-up">Nuestros Servicios</h2>
-      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">En GreenTech Urban Farms ofrecemos una gama completa de servicios agrícolas, desde consultoría hasta implementación de tecnología avanzada:</p>
+      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">Ofrecemos una gama completa de servicios agrícolas, desde la automatización de invernaderos hasta sistemas hidropónicos y consultoría ambiental:</p>
       <div class="row">
         <div class="col-md-4" data-aos="fade-right">
           <h3>Consultoría Agrícola</h3>
-          <p>Ofrecemos asesoramiento especializado en la creación y gestión de proyectos agrícolas urbanos, ayudando a diseñar soluciones personalizadas para cada entorno y necesidad.</p>
+          <p>Proveemos asesoría técnica y estratégica para la creación de proyectos agrícolas urbanos, ayudando a maximizar los recursos en cada proyecto.</p>
         </div>
         <div class="col-md-4" data-aos="fade-up">
           <h3>Automatización de Invernaderos</h3>
-          <p>Diseñamos e instalamos sistemas de automatización que permiten monitorear y controlar invernaderos de forma remota, optimizando variables como riego, luz y ventilación.</p>
+          <p>Nuestra tecnología de automatización permite gestionar las variables críticas de los invernaderos, como la humedad, luz y riego, de forma remota y precisa.</p>
         </div>
         <div class="col-md-4" data-aos="fade-left">
           <h3>Sistemas Hidropónicos</h3>
-          <p>Nuestros sistemas hidropónicos avanzados permiten cultivar alimentos frescos con un uso mínimo de agua y nutrientes, lo que hace que la agricultura urbana sea más eficiente.</p>
+          <p>Desarrollamos sistemas hidropónicos que optimizan el uso de agua y nutrientes, permitiendo una producción más eficiente y sostenible en las ciudades.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección Soluciones -->
-  <section id="solutions" class="solutions-section py-5" style="background-color: #eaf4e1;">
+  <!-- Sección de Mapa de Proyectos -->
+  <section id="mapa-proyectos" class="map-section py-5">
     <div class="container text-center">
-      <h2 class="mb-5" data-aos="fade-up">Nuestras Soluciones Tecnológicas</h2>
+      <h2 class="mb-5">Mapa de Nuestros Proyectos</h2>
+      <div id="map" style="height: 400px;"></div>
+    </div>
+  </section>
+
+  <script>
+    var map = L.map('map').setView([40.416775, -3.703790], 5); // Centrando el mapa en España
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Agregar marcadores de proyectos
+    L.marker([41.3851, 2.1734]).addTo(map).bindPopup('Proyecto en Barcelona');
+    L.marker([37.9922, -1.1307]).addTo(map).bindPopup('Proyecto en Murcia');
+  </script>
+
+  <!-- Sección Testimonios -->
+  <section id="testimonios" class="testimonials-section py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-5">Lo que dicen nuestros clientes</h2>
       <div class="row">
-        <div class="col-md-4" data-aos="fade-right">
-          <div class="solution-box">
-            <img src="img/invernadero-inteligente.jpg" alt="Invernaderos Inteligentes" class="img-fluid">
-            <h3 class="mt-3">Invernaderos Inteligentes</h3>
-            <p>Control total del ambiente de cultivo con nuestros invernaderos inteligentes que maximizan la producción utilizando tecnologías avanzadas de monitoreo de cultivos.</p>
+        <div class="col-md-4">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"GreenTech ha transformado nuestra ciudad. Los invernaderos en los tejados nos permiten producir alimentos frescos y reducir las emisiones de CO2."</p>
+            <footer class="blockquote-footer">Ayuntamiento de Barcelona</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"Gracias a los sistemas automatizados de GreenTech, hemos optimizado la producción de nuestros invernaderos, reduciendo el consumo de agua en un 50%."</p>
+            <footer class="blockquote-footer">Gobierno de Murcia</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"La tecnología hidropónica nos ha permitido cultivar más alimentos con menos recursos. Un verdadero cambio."</p>
+            <footer class="blockquote-footer">Cooperativa AgroVerde</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Blog -->
+  <section id="blog" class="blog-section py-5">
+    <div class="container text-center">
+      <h2 class="mb-5">Últimas Noticias y Blog</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/blog1.jpg" class="card-img-top" alt="Noticia 1">
+            <div class="card-body">
+              <h5 class="card-title">Tecnologías en la Agricultura Urbana</h5>
+              <p class="card-text">Explora las últimas innovaciones en el uso de sistemas automatizados para invernaderos.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="solution-box">
-            <img src="img/hidroponico.jpg" alt="Sistemas Hidropónicos" class="img-fluid">
-            <h3 class="mt-3">Sistemas Hidropónicos</h3>
-            <p>Los sistemas hidropónicos permiten el cultivo sin suelo, maximizando el uso de espacio y optimizando el consumo de agua y nutrientes en ambientes urbanos.</p>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/blog2.jpg" class="card-img-top" alt="Noticia 2">
+            <div class="card-body">
+              <h5 class="card-title">Cómo los Invernaderos Inteligentes Ayudan a las Ciudades</h5>
+              <p class="card-text">Descubre cómo los invernaderos automatizados están transformando la producción de alimentos urbanos.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-left">
-          <div class="solution-box">
-            <img src="img/monitoreo.jpg" alt="Monitoreo Inteligente" class="img-fluid">
-            <h3 class="mt-3">Monitoreo Inteligente</h3>
-            <p>Con drones y sensores avanzados, monitoreamos las condiciones del cultivo en tiempo real, ajustando automáticamente el riego y los nutrientes para maximizar la producción.</p>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/blog3.jpg" class="card-img-top" alt="Noticia 3">
+            <div class="card-body">
+              <h5 class="card-title">Sostenibilidad en la Agricultura Urbana</h5>
+              <p class="card-text">El impacto ambiental positivo que las tecnologías sostenibles están logrando en las ciudades.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección Proyectos -->
-  <section id="projects" class="projects-section py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-5" data-aos="fade-up">Proyectos Destacados</h2>
-      <div class="row">
-        <div class="col-md-6" data-aos="fade-right">
-          <div class="project-box">
-            <img src="img/proyecto-barcelona.jpg" alt="Hivernacles Verds BCN" class="img-fluid">
-            <h3 class="mt-3">Hivernacles Verds BCN</h3>
-            <p>Proyecto en Barcelona que utiliza sistemas hidropónicos avanzados para producir alimentos en azoteas urbanas. Los resultados han permitido abastecer a mercados locales de forma sostenible.</p>
+  <!-- Sección FAQ -->
+  <section id="faq" class="faq-section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ¿Cómo funciona la tecnología hidropónica?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              La hidroponía es un sistema de cultivo sin suelo donde las plantas crecen en una solución de agua rica en nutrientes, maximizando el uso de agua y espacio en áreas urbanas.
+            </div>
           </div>
         </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <div class="project-box">
-            <img src="img/proyecto-murcia.jpg" alt="Murcia GreenLabs" class="img-fluid">
-            <h3 class="mt-3">Murcia GreenLabs</h3>
-            <p>En colaboración con el gobierno de Murcia, instalamos invernaderos inteligentes en áreas urbanas, lo que ha mejorado la autosuficiencia alimentaria y reducido el uso de agua en un 30%.</p>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Cuáles son los beneficios de un invernadero automatizado?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Los invernaderos automatizados permiten controlar las condiciones climáticas, luz y riego de manera precisa, asegurando un crecimiento constante de los cultivos con mínimo esfuerzo.
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Sostenibilidad Completa -->
-  <section id="sustainability" class="sustainability-section py-5" style="background-color: #d3f5ce;">
-    <div class="container text-center">
-      <h2 class="mb-5" data-aos="fade-up">Compromiso con la Sostenibilidad</h2>
-      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">En GreenTech Urban Farms, la sostenibilidad es el pilar fundamental de todo lo que hacemos. Nuestro objetivo es minimizar el impacto ambiental de la producción de alimentos mediante el uso eficiente de los recursos naturales, como el agua y la energía. Estamos comprometidos con un futuro en el que las ciudades puedan ser autosuficientes y sostenibles.</p>
-      <div class="row">
-        <div class="col-md-6" data-aos="fade-right">
-          <h3>Uso de Energías Renovables</h3>
-          <p>Todos nuestros invernaderos están diseñados para aprovechar la energía solar, lo que reduce significativamente la huella de carbono. La electricidad generada por paneles solares se utiliza para alimentar nuestros sistemas de automatización y monitoreo.</p>
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <h3>Reciclaje y Reutilización de Recursos</h3>
-          <p>Implementamos sistemas de reciclaje de agua y nutrientes en todos nuestros proyectos, lo que permite reutilizar hasta el 80% del agua utilizada en el riego. De esta manera, reducimos el consumo de agua y minimizamos el impacto sobre los recursos naturales.</p>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-md-6" data-aos="fade-right">
-          <h3>Reducción de la Huella de Carbono</h3>
-          <p>Gracias a la implementación de nuestras tecnologías, las ciudades pueden producir sus propios alimentos localmente, eliminando la necesidad de largos transportes y reduciendo las emisiones de CO2 relacionadas con el transporte de alimentos.</p>
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <h3>Protección de la Biodiversidad</h3>
-          <p>Nuestros sistemas de cultivo utilizan menos pesticidas y químicos, protegiendo el suelo y los ecosistemas locales. Además, fomentamos el uso de cultivos biodiversos que ayudan a preservar la diversidad genética de las plantas.</p>
         </div>
       </div>
     </div>
@@ -212,6 +263,11 @@
   <footer class="footer py-3 bg-dark text-white text-center">
     <div class="container">
       <p>© 2024 GreenTech Urban Farms. Todos los derechos reservados.</p>
+      <div class="social-icons mt-3">
+        <a href="https://www.instagram.com/greentech" target="_blank" class="me-3"><img src="img/instagram.png" alt="Instagram" width="30"></a>
+        <a href="https://www.twitter.com/greentech" target="_blank" class="me-3"><img src="img/twitter.png" alt="Twitter" width="30"></a>
+        <a href="https://www.linkedin.com/company/greentech" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" width="30"></a>
+      </div>
     </div>
   </footer>
 
