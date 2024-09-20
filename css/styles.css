@@ -12,7 +12,7 @@ body {
 
 .navbar-brand {
   font-weight: 600;
-  color: #e9c46a;
+  color: #2a9d8f;
 }
 
 .hero-section {
@@ -47,6 +47,8 @@ body {
 .hero-overlay .btn {
   font-size: 1.2rem;
   padding: 0.75rem 2rem;
+  background-color: #2a9d8f;
+  border: none;
 }
 
 .about-section, .solutions-section, .team-section, .projects-section {
