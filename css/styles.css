@@ -51,12 +51,12 @@ body {
   border: none;
 }
 
-.about-section, .solutions-section, .team-section, .projects-section {
+.about-section, .solutions-section, .team-section, .projects-section, .impact-section {
   padding: 5rem 0;
 }
 
-.solutions-section, .team-section, .stats-section {
-  background-color: #f9f9f9;
+.solutions-section, .team-section, .impact-section {
+  background-color: #eaf4e1;
 }
 
 .solution-box img {
