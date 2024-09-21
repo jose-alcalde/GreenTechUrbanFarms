@@ -7,11 +7,14 @@
   <meta name="keywords" content="agricultura urbana, sostenibilidad, invernaderos inteligentes, tecnología agrícola, hidroponía, monitoreo de cultivos">
   <meta name="author" content="GreenTech Urban Farms">
   <title>GreenTech Urban Farms - Innovación en Agricultura Urbana</title>
-  
+
   <!-- Cargar Bootstrap y Estilos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   
+  <!-- Leaflet (Para el mapa) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
   <!-- Fuentes y Estilos -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
@@ -22,7 +25,7 @@
   <meta name="og:description" content="Innovación en agricultura urbana sostenible.">
   <meta name="og:image" content="img/og-image.jpg">
 
-  <!-- Script del Chatbot -->
+  <!-- Chatbot -->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function(){
@@ -117,7 +120,7 @@
     </div>
   </section>
 
-  <!-- Sección Soluciones con Imagenes Centradas -->
+  <!-- Sección Soluciones (corrección de imagenes) -->
   <section id="solutions" class="solutions-section py-5" style="background-color: #eaf4e1;">
     <div class="container text-center">
       <h2 class="mb-5" data-aos="fade-up">Nuestras Soluciones Tecnológicas</h2>
@@ -147,121 +150,11 @@
     </div>
   </section>
 
-  <!-- Sección de Mapa de Proyectos -->
+  <!-- Sección del Mapa de Proyectos -->
   <section id="mapa-proyectos" class="map-section py-5">
     <div class="container text-center">
       <h2 class="mb-5">Mapa de Nuestros Proyectos</h2>
       <div id="map" style="height: 400px;"></div>
-    </div>
-  </section>
-
-  <script>
-    var map = L.map('map').setView([40.416775, -3.703790], 5); // Centrando el mapa en España
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Agregar marcadores de proyectos
-    L.marker([41.3851, 2.1734]).addTo(map).bindPopup('Proyecto en Barcelona');
-    L.marker([37.9922, -1.1307]).addTo(map).bindPopup('Proyecto en Murcia');
-  </script>
-
-  <!-- Sección Testimonios -->
-  <section id="testimonios" class="testimonials-section py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-5">Lo que dicen nuestros clientes</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <blockquote class="blockquote text-center">
-            <p class="mb-0">"GreenTech ha transformado nuestra ciudad. Los invernaderos en los tejados nos permiten producir alimentos frescos y reducir las emisiones de CO2."</p>
-            <footer class="blockquote-footer">Ayuntamiento de Barcelona</footer>
-          </blockquote>
-        </div>
-        <div class="col-md-4">
-          <blockquote class="blockquote text-center">
-            <p class="mb-0">"Gracias a los sistemas automatizados de GreenTech, hemos optimizado la producción de nuestros invernaderos, reduciendo el consumo de agua en un 50%."</p>
-            <footer class="blockquote-footer">Gobierno de Murcia</footer>
-          </blockquote>
-        </div>
-        <div class="col-md-4">
-          <blockquote class="blockquote text-center">
-            <p class="mb-0">"La tecnología hidropónica nos ha permitido cultivar más alimentos con menos recursos. Un verdadero cambio."</p>
-            <footer class="blockquote-footer">Cooperativa AgroVerde</footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Blog -->
-  <section id="blog" class="blog-section py-5">
-    <div class="container text-center">
-      <h2 class="mb-5">Últimas Noticias y Blog</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/blog1.jpg" class="card-img-top" alt="Noticia 1">
-            <div class="card-body">
-              <h5 class="card-title">Tecnologías en la Agricultura Urbana</h5>
-              <p class="card-text">Explora las últimas innovaciones en el uso de sistemas automatizados para invernaderos.</p>
-              <a href="#" class="btn btn-primary">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/blog2.jpg" class="card-img-top" alt="Noticia 2">
-            <div class="card-body">
-              <h5 class="card-title">Cómo los Invernaderos Inteligentes Ayudan a las Ciudades</h5>
-              <p class="card-text">Descubre cómo los invernaderos automatizados están transformando la producción de alimentos urbanos.</p>
-              <a href="#" class="btn btn-primary">Leer más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/blog3.jpg" class="card-img-top" alt="Noticia 3">
-            <div class="card-body">
-              <h5 class="card-title">Sostenibilidad en la Agricultura Urbana</h5>
-              <p class="card-text">El impacto ambiental positivo que las tecnologías sostenibles están logrando en las ciudades.</p>
-              <a href="#" class="btn btn-primary">Leer más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección FAQ -->
-  <section id="faq" class="faq-section py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
-      <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              ¿Cómo funciona la tecnología hidropónica?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              La hidroponía es un sistema de cultivo sin suelo donde las plantas crecen en una solución de agua rica en nutrientes, maximizando el uso de agua y espacio en áreas urbanas.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              ¿Cuáles son los beneficios de un invernadero automatizado?
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Los invernaderos automatizados permiten controlar las condiciones climáticas, luz y riego de manera precisa, asegurando un crecimiento constante de los cultivos con mínimo esfuerzo.
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -293,11 +186,6 @@
   <footer class="footer py-3 bg-dark text-white text-center">
     <div class="container">
       <p>© 2024 GreenTech Urban Farms. Todos los derechos reservados.</p>
-      <div class="social-icons mt-3">
-        <a href="https://www.instagram.com/greentech" target="_blank" class="me-3"><img src="img/instagram.png" alt="Instagram" width="30"></a>
-        <a href="https://www.twitter.com/greentech" target="_blank" class="me-3"><img src="img/twitter.png" alt="Twitter" width="30"></a>
-        <a href="https://www.linkedin.com/company/greentech" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" width="30"></a>
-      </div>
     </div>
   </footer>
 
@@ -307,5 +195,9 @@
   <script>
     AOS.init();
   </script>
+
+  <!-- Leaflet (Mapa) -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
