@@ -1,4 +1,4 @@
-/* General */
+/* Estilos Generales */
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
@@ -67,11 +67,14 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
-  transition: transform 0.3s ease;
+  display: block;
 }
 
-.solution-box img:hover {
-  transform: scale(1.05);
+.solution-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -79,4 +82,9 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
 }
