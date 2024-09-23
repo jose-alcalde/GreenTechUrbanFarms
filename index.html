@@ -42,31 +42,56 @@ s0.parentNode.insertBefore(s1,s0);
 </head>
 <body>
 
+<!-- Botón para Minimizar Chatbot -->
+<script>
+  var Tawk_API = Tawk_API || {};
+  Tawk_API.onLoad = function() {
+    var minimizeChat = document.createElement('button');
+    minimizeChat.innerHTML = 'Minimizar Chat';
+    minimizeChat.style.position = 'fixed';
+    minimizeChat.style.bottom = '20px';
+    minimizeChat.style.right = '20px';
+    minimizeChat.style.zIndex = '9999';
+    minimizeChat.style.backgroundColor = '#2a9d8f';
+    minimizeChat.style.color = '#fff';
+    minimizeChat.style.padding = '10px';
+    minimizeChat.style.border = 'none';
+    minimizeChat.style.cursor = 'pointer';
+    minimizeChat.style.borderRadius = '5px';
 
-  <!-- Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home">
-        <img src="img/logo.png" alt="GreenTech Urban Farms Logo" width="40" class="me-2">GreenTech Urban Farms
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#solutions">Soluciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#impact">Impacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sustainability">Sostenibilidad</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-        </ul>
-      </div>
+    minimizeChat.onclick = function() {
+      Tawk_API.minimize();
+    };
+    document.body.appendChild(minimizeChat);
+  };
+</script>
+
+
+
+ <!-- Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <img src="img/logo.png" alt="GreenTech Urban Farms Logo" width="40" class="me-2">GreenTech Urban Farms
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#solutions">Soluciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#impact">Impacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
 <!-- Hero Section con video -->
 <section id="home" class="hero-section">
@@ -157,28 +182,30 @@ s0.parentNode.insertBefore(s1,s0);
     </div>
   </div>
 </section>
-<!-- Sección Testimonios -->
+
+
+<!-- Sección Testimonios Mejorada -->
 <section id="testimonios" class="testimonials-section py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="mb-5">Lo que dicen nuestros clientes</h2>
+  <div class="container">
+    <h2 class="mb-5 text-center">Lo que dicen nuestros clientes</h2>
     <div class="row">
       <div class="col-md-4">
-        <blockquote class="blockquote text-center">
+        <div class="testimonial-box p-4 mb-4 bg-white shadow-sm">
           <p class="mb-0">"GreenTech ha transformado nuestra ciudad. Los invernaderos en los tejados nos permiten producir alimentos frescos y reducir las emisiones de CO2."</p>
-          <footer class="blockquote-footer">Ayuntamiento de Barcelona</footer>
-        </blockquote>
+          <footer class="blockquote-footer mt-3">Ayuntamiento de Barcelona</footer>
+        </div>
       </div>
       <div class="col-md-4">
-        <blockquote class="blockquote text-center">
+        <div class="testimonial-box p-4 mb-4 bg-white shadow-sm">
           <p class="mb-0">"Gracias a los sistemas automatizados de GreenTech, hemos optimizado la producción de nuestros invernaderos, reduciendo el consumo de agua en un 50%."</p>
-          <footer class="blockquote-footer">Gobierno de Murcia</footer>
-        </blockquote>
+          <footer class="blockquote-footer mt-3">Gobierno de Murcia</footer>
+        </div>
       </div>
       <div class="col-md-4">
-        <blockquote class="blockquote text-center">
+        <div class="testimonial-box p-4 mb-4 bg-white shadow-sm">
           <p class="mb-0">"La tecnología hidropónica nos ha permitido cultivar más alimentos con menos recursos. Un verdadero cambio."</p>
-          <footer class="blockquote-footer">Cooperativa AgroVerde</footer>
-        </blockquote>
+          <footer class="blockquote-footer mt-3">Cooperativa AgroVerde</footer>
+        </div>
       </div>
     </div>
   </div>
